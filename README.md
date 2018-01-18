@@ -23,6 +23,11 @@ cs.vim enhances c# output to find unity errors. Use something like this to load 
     copen
 
 
+# See also
+
+* [ctrlp unity3d docs](https://github.com/idbrii/ctrlp-unity3d-docs) for searching Unity documentation.
+
+
 # TODO
 Check out VimUnity3D to get building working:
 https://github.com/K-Tone/VimUnity3D/blob/master/vimcompile.py
