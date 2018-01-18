@@ -5,7 +5,7 @@ Work with the Unity game engine from vim.
 
 cs.vim enhances c# output to find unity errors. Use something like this to load them:
 
-    " Platform dependent.
+    " Platform dependent. See https://docs.unity3d.com/Manual/LogFiles.html
     let logfile = $LocalAppData .'/Unity/Editor/Editor.log'
     " Project dependent.
     let g:project_root = 'c:/blah/project'
