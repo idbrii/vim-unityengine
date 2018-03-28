@@ -3,6 +3,10 @@ Editor Windows
 
 * [Preview animations in editor](https://forum.unity.com/threads/sample-mecanim-animations-in-editor.262973/#post-1741587)
     * Simple code to preview animations on objects in edit mode.
+* [TeleportSceneCamera](https://forum.unity.com/threads/moving-scene-view-camera-from-editor-script.64920/#post-3425242)
+    * Move the scene camera to look somewhere.
+    * Alternative: [use AlignViewToObject](http://answers.unity.com/answers/256969/view.html)
+    * Alternative: [SceneViewCameraFollower](http://wiki.unity3d.com/index.php/SceneViewCameraFollower)
 
 
 Attributes
