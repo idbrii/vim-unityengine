@@ -1,5 +1,11 @@
-# vim-unityeditor
-Work with the Unity game engine from vim.
+# vim-unityengine
+Make vim understand files and formats from the Unity game engine.
+
+# Features
+
+* `compiler cs` processes Unity build output to recognize callstacks.
+* `unityengine#ale#setup_ale(path_to_unity_project)` simplifies linting with [ale](https://github.com/w0rp/ale).
+* ShaderLab files recognized as glsl. (See [vim polyglot](https://github.com/sheerun/vim-polyglot) or [vim glsl](https://github.com/tikhomirov/vim-glsl)).
 
 # Load callstacks from the editor log
 
@@ -25,7 +31,7 @@ cs.vim enhances c# output to find unity errors. Use something like this to load 
 
 # See also
 
-* [ctrlp unity3d docs](https://github.com/idbrii/ctrlp-unity3d-docs) for searching Unity documentation.
+* [vim-unityengine-docs)](https://github.com/idbrii/vim-unityengine-docs) for searching Unity documentation.
 
 
 # TODO
