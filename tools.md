@@ -7,6 +7,8 @@ Editor Windows
     * Move the scene camera to look somewhere.
     * Alternative: [use AlignViewToObject](http://answers.unity.com/answers/256969/view.html)
     * Alternative: [SceneViewCameraFollower](http://wiki.unity3d.com/index.php/SceneViewCameraFollower)
+* [Comparing Profiler captures](https://answers.unity.com/questions/1507144/how-do-i-compare-two-profiler-captures-against-eac.html)
+    * Compare before and after Profiler captures.
 
 
 Attributes
@@ -38,6 +40,19 @@ Code Tutorials
     * Basics of how to access objects (Object children or any Serializable).
 * [Attributes that reference other variables](https://answers.unity.com/questions/1471758/create-an-attribute-that-references-another-proper.html)
     * Info on how to write PropertyDrawers that link two variables.
+* [Auto Refresh](https://gist.github.com/cobbpg/a74c8a5359554eb3daa5)
+    * Auto Refresh, or hot-loading, is where you run the game, modify code, and the game continues executing with the new code active. So if you need to kite some enemies behind the player to test a some broken jumping code, you can modify the code and test the jump without having to restart the game and re-kite the enemies.
 
 
+Callstacks
+==========
 
+Clone [UnityCsReference](https://github.com/Unity-Technologies/UnityCsReference) somewhere (e.g., `e:\code\clones\unity-csref`).
+
+Make a link to it in Unity's default location:
+
+    (Win, cmd, Ctrl-Shift-Enter)
+    > mklink /D c:\buildslave\unity\build e:\code\clones\unity-csref
+    symbolic link created for c:\buildslave\unity\build <<===>> e:\code\clones\unity-csref
+
+Now you can jump to Unity code from callstacks (in editor and vim).
