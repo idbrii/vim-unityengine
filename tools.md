@@ -21,6 +21,8 @@ Attributes
     * There's a similar RangedFloat from [this Unite 2016 talk on Scriptable Object](https://youtu.be/6vmRwLYWNRo?t=39m9s). Looks like [this is the relevant commit](https://bitbucket.org/richardfine/scriptableobjectdemo/commits/03a730f1b0581c0d424268bc03e33dac21f34248). Look at MinMaxRangeAttribute, RangedFloat, and RangedFloatDrawer. I think the real magic happens in RangedFloatDrawer.
 * [NamedArrayAttribute](https://answers.unity.com/answers/1472176/view.html)
     * a user-friendly array with indices based on an enum shown as labels in editor.
+* [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)
+    * A library of simple but useful Attributes.
 
 
 Standalone Objects
@@ -31,6 +33,16 @@ Standalone Objects
 
 * [FlyCam_Extended](http://wiki.unity3d.com/index.php/FlyCam_Extended)
     * Debug fly camera
+
+* Debug.DrawArrow()
+    * [DrawArrow](https://forum.unity.com/threads/debug-drawarrow.85980/) - code snippet from forum.
+    * [Debug Drawing Extension](https://forum.unity.com/threads/debug-drawing-extension-arkham-interactive.202237/) - free asset that includes several other shapes. Could use better debug vs gizmo namespacing.
+
+* [keijiro's kvant effects suite](https://github.com/search?q=kvant+user%3Akeijiro&type=Repositories)
+    * Tunnel for a loading screen tunnel transition.
+    * Wig for silly hair.
+    * Lattice/Wall for surfaces.
+    * etc.
 
 
 Code Tutorials
