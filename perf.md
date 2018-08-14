@@ -25,3 +25,21 @@ TODO: Rerun this test with nonempty functions.
 * Iterating over `Dictionary<T>`, `HashSet<T>`, `LinkedList<T>`.
 * `Dictionary<T>`, `HashSet<T>`, `LinkedList<T>`, `Queue<T>`, and `Stack<T>` only create garbage on the first iteration of each type T (not per-object).
 
+
+
+# Profiling
+
+Here's some quick pointers for where to look when you find slow code.
+
+* WillRenderCanvas 
+ * See [UI profiling tools](https://unity3d.com/learn/tutorials/topics/best-practices/unity-ui-profiling-tools).
+* Canvas.BuildBatch or Canvas::UpdateBatches
+ * likely problem is an excessive number of Canvas Renderer components on a single Canvas: see [splitting canvases](https://unity3d.com/learn/tutorials/topics/best-practices/fill-rate-canvases-and-input#splitting-canvases).
+* WaitForTargetFPS
+ * Whenever we see a function called WaitForTargetFPS in the Hierarchy view, this means that our game is waiting for VSync. We do not need to investigate this function and can safely ignore it. See [Disabling VSync](https://unity3d.com/learn/tutorials/temas/performance-optimization/diagnosing-performance-problems-using-profiler-window).
+* Gfx.WaitForPresent
+ * If the function Gfx.WaitForPresent is taking the longest in the CPU Usage profiler, this indicates that the CPU is waiting for the GPU. This means that our game is GPU bound at this point. See [Optimizing graphics rendering in Unity games](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games?playlist=44069).
+
+Otherwise, see: [Diagnosing performance problems using profiler window](https://unity3d.com/learn/tutorials/temas/performance-optimization/diagnosing-performance-problems-using-profiler-window)
+
+
