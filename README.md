@@ -32,6 +32,7 @@ cs.vim enhances c# output to find unity errors. Use something like this to load 
 # See also
 
 * [vim-unityengine-docs](https://github.com/idbrii/vim-unityengine-docs) for searching Unity documentation.
+* For completion of Unity code, see [omnisharp-vim](https://github.com/OmniSharp/omnisharp-vim) for C# from dlls (use `:OmniSharpInstall` to ensure proper setup) or use ctags on [UnityCsReference](https://github.com/Unity-Technologies/UnityCsReference) (pick the branch for your version of Unity).
 
 
 # TODO
