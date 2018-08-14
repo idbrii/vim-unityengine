@@ -31,7 +31,7 @@ cs.vim enhances c# output to find unity errors. Use something like this to load 
 
 # See also
 
-* [vim-unityengine-docs)](https://github.com/idbrii/vim-unityengine-docs) for searching Unity documentation.
+* [vim-unityengine-docs](https://github.com/idbrii/vim-unityengine-docs) for searching Unity documentation.
 
 
 # TODO
