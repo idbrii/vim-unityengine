@@ -26,6 +26,11 @@ TODO: Rerun this test with nonempty functions.
 * `Dictionary<T>`, `HashSet<T>`, `LinkedList<T>`, `Queue<T>`, and `Stack<T>` only create garbage on the first iteration of each type T (not per-object).
 
 
+### [Animation Blending](https://youtu.be/8VgQ5PpTqjc?t=1913)
+* Layers at 0 will no execute. Layers at epsilon will.
+ * Clamp your layer blend weights: `weight = weight < 0.01f ? 0.0f : weight;` This can provide big speed ups when you often have small (and imperceivable) weights (e.g., from stick input).
+
+
 
 # Profiling
 
@@ -39,6 +44,9 @@ Here's some quick pointers for where to look when you find slow code.
  * Whenever we see a function called WaitForTargetFPS in the Hierarchy view, this means that our game is waiting for VSync. We do not need to investigate this function and can safely ignore it. See [Disabling VSync](https://unity3d.com/learn/tutorials/temas/performance-optimization/diagnosing-performance-problems-using-profiler-window).
 * Gfx.WaitForPresent
  * If the function Gfx.WaitForPresent is taking the longest in the CPU Usage profiler, this indicates that the CPU is waiting for the GPU. This means that our game is GPU bound at this point. See [Optimizing graphics rendering in Unity games](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games?playlist=44069).
+* TempAlloc.Overflow
+ * If related to animator, [indicates too many clips](https://youtu.be/8VgQ5PpTqjc?t=1882).
+ * Use RuntimeOverrideControllers to unload unused data.
 
 Otherwise, see: [Diagnosing performance problems using profiler window](https://unity3d.com/learn/tutorials/temas/performance-optimization/diagnosing-performance-problems-using-profiler-window)
 
