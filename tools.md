@@ -10,6 +10,11 @@ Editor Windows
 * [Comparing Profiler captures](https://answers.unity.com/questions/1507144/how-do-i-compare-two-profiler-captures-against-eac.html)
     * Compare before and after Profiler captures.
 
+* [Focus UI on Selection](https://www.reddit.com/r/Unity3D/comments/6yaiit/free_editor_script_to_automatically_hide_ui_layer/dmmc393/)
+    * Helpful for doing UI editing. Like a modal editor for Unity UI.
+    * You must put all UI on the UI layer.
+    * Focuses UI on selection and switch to ortho.
+    * Hides UI on deselection and goes back to previous world view.
 
 Attributes
 ==========
