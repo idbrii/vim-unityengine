@@ -1,7 +1,7 @@
 " Detect unity yaml files
 "
 
-au BufNewFile,BufRead *.unity setfiletype yaml
+au BufNewFile,BufRead *.unity,*.spriteatlas setfiletype yaml
 
 " These extensions are so generic, that we should provide a way to avoid
 " registering them.
