@@ -19,6 +19,8 @@ Editor Windows
 Attributes
 ==========
 
+* [DrawIf](https://forum.unity.com/threads/draw-a-field-only-if-a-condition-is-met.448855/#post-3435603)
+    * Conditionally show variables so you can hide irrelevant stuff (or make it readonly).
 * [ReadOnlyAttribute](https://gist.github.com/MattRix/9fb45606bfbc16254641e4d462117737)
     * Make properties visible but not editable.
 * [MinMaxRangeAttribute](http://www.grapefruitgames.com/blog/2013/11/a-min-max-range-for-unity/)
