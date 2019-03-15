@@ -51,6 +51,9 @@ Standalone Objects
     * Lattice/Wall for surfaces.
     * etc.
 
+* [CaptureScreenshot](http://answers.unity.com/answers/1612933/view.html)
+    * Capture screenshots with a transparent background (player on transparent background).
+
 
 Code Tutorials
 ==============
