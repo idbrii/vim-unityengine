@@ -12,7 +12,10 @@ function! unityengine#ale#setup_ale(path_to_unity_project)
     endif
     let project_assemblies = expand(a:path_to_unity_project .'/obj/Debug')
     if !isdirectory(project_assemblies)
-        echomsg "Couldn't find obj folder in given path. Argument should be folder containing Assets/ received: ". a:path_to_unity_project
+        let project_assemblies = expand(a:path_to_unity_project .'/Library/ScriptAssemblies')
+    endif
+    if !isdirectory(project_assemblies)
+        echomsg "Couldn't find assembly folder in given path. Argument should be folder containing Assets/ Couldn't find it in: ". a:path_to_unity_project
         return
     endif
     let g:ale_cs_mcsc_assemblies += [ project_assemblies ]
