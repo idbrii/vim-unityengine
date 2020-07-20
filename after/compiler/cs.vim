@@ -2,7 +2,7 @@
 " Compiler:	    C# (Unity errors)
 " TODO: Consider using mono as a base (gmcs) instead of cs?
 
-" Don't mess with current_compiler to inherit C# efm and makeprg:
+" Don't mess with current_compiler so we inherit C# efm and makeprg:
 "if exists("current_compiler")
 "  finish
 "endif
@@ -14,6 +14,10 @@ endif
 
 
 " Adding to existing C# errorformat!
+
+" Don't make assembly references jumpable (the files don't exist).
+"   UnityEngine.GUILayoutGroup.GetNext () (at <819de1aa368e45faa4f78e26c97c62b0>:0)
+CompilerSet errorformat+=%+G%m\ %.%#(at\ <%.%#>\:%l)
 
 " Debug.LogError()
 " Grab all elements of the callstack to step through them.
