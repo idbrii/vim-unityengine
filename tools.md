@@ -16,6 +16,8 @@ Editor Windows
     * Focuses UI on selection and switch to ortho.
     * Hides UI on deselection and goes back to previous world view.
 
+[Expand active children in Hierarchy](https://answers.unity.com/questions/1699048/expand-active-children-in-hierarchy.html)
+
 Attributes
 ==========
 
@@ -54,6 +56,11 @@ Standalone Objects
 * [CaptureScreenshot](http://answers.unity.com/answers/1612933/view.html)
     * Capture screenshots with a transparent background (player on transparent background).
 
+
+UI Layout
+=========
+
+* [Modifying RectTransform from code](https://answers.unity.com/questions/1007886/how-to-set-the-new-unity-ui-rect-transform-anchor.html?childToView=1761375#answer-1761375)
 
 Code Tutorials
 ==============
