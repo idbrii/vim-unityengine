@@ -4,4 +4,7 @@
 " * https://github.com/mingchaoyan/vim-shaderlab
 " * https://github.com/vim-scripts/ShaderHighLight
 
-au BufNewFile,BufRead *.shader setfiletype glsl
+if get(g:, "unityengine_detect_shader_filetypes", 1)
+    " Godot also uses .shader, so require Assets folder.
+    au BufNewFile,BufRead */Assets/*/*.shader setfiletype glsl
+endif
