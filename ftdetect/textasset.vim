@@ -1,5 +1,7 @@
-" Detect unity yaml files
+" Detect unity plaintext files
 "
+
+au BufNewFile,BufRead *.asmdef setfiletype json
 
 au BufNewFile,BufRead *.unity,*.spriteatlas setfiletype yaml
 
