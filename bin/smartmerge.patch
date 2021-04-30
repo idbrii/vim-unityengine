@@ -1,0 +1,22 @@
+--- mergespecfile.orig.txt	2020-08-06 17:31:52 -0700
++++ mergespecfile.txt	2021-04-30 10:33:13 -0700
+@@ -12,8 +12,11 @@
+ # On Windows %programs% is replaced with "C:\Program Files" and "C:\Program Files (x86)" there by resulting in two entries to try out
+ # On OSX %programs% is replaced with "/Applications" and "$HOME/Applications" thereby resulting in two entries to try out
+ 
+ unity use "%programs%\YouFallbackMergeToolForScenesHere.exe" "%l" "%r" "%b" "%d"
+ prefab use "%programs%\YouFallbackMergeToolForPrefabsHere.exe" "%l" "%r" "%b" "%d"
++
++# Can't use PATH or USERPROFILE. Input files don't have conflict markers. Seems like it's just so you can confirm the diff worked as expected. But it doesn't include the resolved diff output.
++* use "C:\Users\idbrii\scoop\apps\vim-nightly\current\gvim.exe" -f --servername MERGE -c "3b | vsplit +2b | DiffBoth" "%d" "%b" "%l" "%r"
++# Using :Merge from https://github.com/idbrii/vim-mergetool
++*.cs use "C:\Users\idbrii\scoop\apps\vim-nightly\current\gvim.exe" -f -c "Merge" "%d" "%b" "%l" "%r"
+ 
+ #
+ # Default fallbacks for unknown files. First tool found is used.
+@@ -48,3 +51,5 @@
+ * use "%programs%\SourceGear\Common\DiffMerge\sgdm.exe" --nosplash -m -t1="Incoming Changes"  -t2="Base" -t3="Working Copy" -r="%d" "%l" "%b" "%r"
+ * use "%programs%/DiffMerge.app/Contents/MacOS/DiffMerge" --nosplash -m -t1="Incoming Changes"  -t2="Base" -t3="Working Copy" -r="%d" "%l" "%b" "%r"
+ * use "%programs%/Utilities/DiffMerge.app/Contents/MacOS/DiffMerge" --nosplash -m -t1="Incoming Changes"  -t2="Base" -t3="Working Copy" -r="%d" "%l" "%b" "%r"
++
++# vim:set et sw=4 ts=4 ft=conf:
