@@ -44,6 +44,7 @@ Standalone Objects
     * Debug fly camera
 
 * Debug.DrawArrow()
+    * [Vertx.Debugging](https://github.com/vertxxyz/Vertx.Debugging) - MIT code to draw shapes. Uses Draw for all functions and you wrap Gizmos in `using (DrawGizmosScope())`. Even adds worldspace debug text that's optionally rendered in the Game view. Code is stripped outside of editor. Seems great.
     * [DrawArrow](https://forum.unity.com/threads/debug-drawarrow.85980/) - code snippet from forum.
     * [Debug Drawing Extension](https://forum.unity.com/threads/debug-drawing-extension-arkham-interactive.202237/) - free asset that includes several other shapes. Could use better debug vs gizmo namespacing.
 
@@ -85,3 +86,7 @@ Make a link to it in Unity's default location:
     symbolic link created for c:\buildslave\unity\build <<===>> e:\code\clones\unity-csref
 
 Now you can jump to Unity code from callstacks (in editor and vim).
+
+I build tags for these folders:
+
+    ctags --c#-kinds=cismpdngtEf --fields=kst -R artifacts Editor Modules Runtime
